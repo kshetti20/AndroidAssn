@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNumber"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Spinner
+        android:id="@+id/book_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        app:layout_constraintTop_toBottomOf="@+id/book_spinner"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check for books list"
+        android:id="@+id/next_screen"
+        app:layout_constraintTop_toBottomOf="@+id/submit"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

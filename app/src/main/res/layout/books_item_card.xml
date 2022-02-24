@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.androidapp.models.Book" />
+    </data>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+            <TextView
+                android:id="@+id/books_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="@{item.bookName}"
+                android:padding="5dp"
+                />
+
+                <TextView
+                    android:id="@+id/books_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/books_name"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:text="@{item.phoneNumber}"
+                    android:padding="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:id="@+id/savePdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save PDF"
+                    android:layout_toStartOf="@+id/delete"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    />
+
+            </RelativeLayout>>
+
+</layout>
